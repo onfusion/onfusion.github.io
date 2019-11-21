@@ -1,0 +1,50 @@
+.navbar {
+    border-radius: 0;
+    border-width: 0 0 1px 0;
+    min-height: 81px;
+}
+
+.navbar-default {
+    background-color: #fff;
+    border-color: #e2e2e2;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+
+    .navbar-nav {
+        >li {
+            >a {
+                color: $greyDark;
+                line-height: 30px;
+                margin: 10px 0 10px 30px;
+                text-align: center;
+
+                &:hover,
+                &:focus {
+                    color: $yellow;
+                }
+            }
+        }
+
+        >.active {
+            a {
+                background: none;
+                color: $yellow;
+
+                &:hover,
+                &:focus {
+                    background: none;
+                    color: $yellow;
+                }
+            }
+        }
+    }
+}
+
+.navbar-brand {
+    height: 80px;
+
+    >img {
+        max-width: 50px;
+    }
+}

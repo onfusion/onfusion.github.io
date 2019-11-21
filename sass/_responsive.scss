@@ -1,0 +1,89 @@
+// Navebar SCSS
+@media (max-width: 1200px) {
+
+    // Navbar SCSS Style
+    .navbar-default {
+        font-size: 16px;
+
+        .container {
+            width: 100%;
+        }
+
+        .navbar-nav {
+            >li {
+                >a {
+                    margin: 10px 5px 10px 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+
+    // Welcome Section SCSS Style
+    .welcome {
+        .text-block {
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 20px;
+            line-height: 26px;
+            margin: 15px 0;
+
+            strong {
+                font-size: 24px;
+            }
+        }
+
+        .cd-headline {
+            font-size: 20px;
+            line-height: 26px;
+            margin: 25px 0;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    // Navbar SCSS Style
+    .navbar-collapse {
+        &.collapse {
+            display: none !important;
+
+            &.in {
+                display: block !important;
+            }
+        }
+    }
+
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar {
+        .navbar-nav {
+            float: none;
+
+            &.navbar-right {
+                float: none !important;
+                margin: 0;
+            }
+
+            >li {
+                float: none;
+
+                a {
+                    margin: 0;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
