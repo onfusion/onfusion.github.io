@@ -11,6 +11,29 @@
     font-size: 18px;
     font-weight: 600;
 
+    .navbar-toggle {
+        border-color: $yellow;
+        border-width: 2px;
+        border-radius: 5px;
+        margin-top: 18px;
+
+        &:hover,
+        &:focus {
+            background: #252525;
+            border-color: $yellow;
+        }
+
+        .icon-bar {
+            background-color: $yellow;
+            height: 4px;
+            width: 30px;
+
+            +.icon-bar {
+                margin-top: 6px;
+            }
+        }
+    }
+
     .navbar-nav {
         >li {
             >a {
