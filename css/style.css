@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:300,400,500,600,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Dosis:300,400,500,600,700|Raleway:300,400,500,600,700,900&display=swap");
 /*
     font-family: 'Open Sans', sans-serif;
     font-family: 'Raleway', sans-serif;
+    font-family: 'Dosis', sans-serif;
 */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 14px;
   line-height: 24px;
 }
@@ -15,7 +16,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Dosis', sans-serif;
 }
 
 .container {
@@ -32,6 +33,7 @@ h6 {
   background-size: cover;
   background-position: top center;
   height: 100vh;
+  min-height: 500px;
   position: relative;
 }
 .welcome:before {
@@ -50,26 +52,44 @@ h6 {
 }
 .welcome .text-block {
   color: #B1B1B1;
-  height: 350px;
+  height: 400px;
   position: absolute;
   top: 50%;
   left: 0;
   right: 0;
-  margin: -200px auto 0;
+  margin: -250px auto 0;
   max-width: 600px;
   text-align: center;
 }
 .welcome h1 {
   color: #ffffff;
-  line-height: 46px;
+  font-size: 26px;
+  line-height: 36px;
+  letter-spacing: 4px;
   margin: 25px 0;
   text-transform: uppercase;
 }
 .welcome h1 strong {
   color: #ffc516;
   display: block;
-  font-weight: 700;
-  margin-top: 10px;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 15px;
+  text-transform: none;
+}
+.welcome .cd-headline {
+  color: #ffffff;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  margin: 15px 0 25px;
+  position: relative;
+}
+.welcome .cd-headline.clip .cd-words-wrapper:after {
+  background-color: #ffc516;
+}
+.welcome .cd-headline.clip span {
+  padding: 5px 0;
 }
 .welcome p {
   font-size: 16px;
