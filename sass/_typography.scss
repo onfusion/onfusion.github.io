@@ -1,7 +1,14 @@
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     line-height: 24px;
+    margin: 0;
+    padding: 0;
 }
 
 h1,
@@ -13,10 +20,69 @@ h6 {
     font-family: 'Dosis', sans-serif;
 }
 
+p {
+    margin: 0 0 15px;
+}
+
 .container {
     position: relative;
 }
 
 .cta {
     display: inline-block;
+}
+
+.section-title {
+    margin-bottom: 25px;
+    overflow: hidden;
+    position: relative;
+
+    h1,
+    h2,
+    h3 {
+        margin: 10px 0;
+
+        &:after {
+            background: $yellow;
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 40px;
+        }
+    }
+}
+
+section {
+    padding: 50px 0;
+}
+
+.panel {
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    .panel-body {
+        padding: 20px;
+
+        h3 {
+            font-size: 20px;
+            margin: 5px 0 20px;
+        }
+    }
+}
+
+.clearfix {
+
+    &:before,
+    &:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
 }

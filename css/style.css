@@ -4,10 +4,17 @@
     font-family: 'Raleway', sans-serif;
     font-family: 'Dosis', sans-serif;
 */
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -19,12 +26,64 @@ h6 {
   font-family: 'Dosis', sans-serif;
 }
 
+p {
+  margin: 0 0 15px;
+}
+
 .container {
   position: relative;
 }
 
 .cta {
   display: inline-block;
+}
+
+.section-title {
+  margin-bottom: 25px;
+  overflow: hidden;
+  position: relative;
+}
+.section-title h1,
+.section-title h2,
+.section-title h3 {
+  margin: 10px 0;
+}
+.section-title h1:after,
+.section-title h2:after,
+.section-title h3:after {
+  background: #ffc516;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 40px;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.panel {
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.panel:hover {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+.panel .panel-body {
+  padding: 20px;
+}
+.panel .panel-body h3 {
+  font-size: 20px;
+  margin: 5px 0 20px;
+}
+
+.clearfix:before, .about .interest:before, .clearfix:after, .about .interest:after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .welcome {
@@ -57,7 +116,7 @@ h6 {
   top: 50%;
   left: 0;
   right: 0;
-  margin: -250px auto 0;
+  margin: -220px auto 0;
   max-width: 600px;
   text-align: center;
 }
@@ -126,7 +185,15 @@ h6 {
 .navbar {
   border-radius: 0;
   border-width: 0 0 1px 0;
+  display: none;
+  margin-bottom: 0;
   min-height: 81px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: -85px;
+  transition: all ease-in-out 0.5s;
+  z-index: 999;
 }
 
 .navbar-default {
@@ -140,7 +207,9 @@ h6 {
   border-color: #ffc516;
   border-width: 2px;
   border-radius: 5px;
-  margin-top: 18px;
+  margin-top: 9px;
+  margin-right: 0;
+  padding: 7px 10px;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background: #252525;
@@ -149,7 +218,7 @@ h6 {
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #ffc516;
   height: 4px;
-  width: 30px;
+  width: 25px;
 }
 .navbar-default .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 6px;
@@ -177,6 +246,179 @@ h6 {
 }
 .navbar-brand > img {
   max-width: 50px;
+}
+
+.btn {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15), 0 3px 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin: 10px;
+  padding: 10px 25px;
+}
+
+.btn-primary {
+  border-color: #2196f3;
+  background-color: #2196f3;
+}
+.btn-primary:hover, .btn-primary:focus {
+  border-color: #2196f3;
+  background-color: #2196f3;
+  box-shadow: 0 3px 13px rgba(0, 0, 0, 0.25), 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-success {
+  border-color: #38de8a;
+  background-color: #38de8a;
+}
+.btn-success:hover, .btn-success:focus {
+  border-color: #38de8a;
+  background-color: #38de8a;
+  box-shadow: 0 3px 13px rgba(0, 0, 0, 0.25), 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.skill-bar {
+  position: relative;
+}
+.skill-bar strong {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.progress {
+  border: 1px solid #ffc516;
+  border-radius: 5px;
+  box-shadow: none;
+  height: 6px;
+  margin-bottom: 30px;
+  overflow: visible;
+}
+
+.progress-bar {
+  box-shadow: none;
+  position: relative;
+}
+.progress-bar:after {
+  background: #ffc516;
+  border-radius: 50px;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0px;
+  height: 15px;
+  margin: -6px -3px 0 0;
+  width: 15px;
+}
+
+.progress-bar-primary {
+  background-color: #2196f3;
+}
+
+.progress-bar-success {
+  background-color: #38de8a;
+}
+
+.progress-bar-warning {
+  background-color: #ffc516;
+}
+
+.about {
+  background: #f5f5f5;
+}
+.about .section-title {
+  margin-bottom: 70px;
+}
+.about .dp {
+  border-radius: 50%;
+  height: 150px;
+  margin: -80px auto 0;
+  overflow: hidden;
+  width: 150px;
+}
+.about .dp img {
+  max-width: 100%;
+}
+.about .panel {
+  margin-bottom: 30px;
+}
+.about .panel.who {
+  margin-top: 70px;
+}
+.about .panel.info, .about .panel.vision {
+  min-height: 270px;
+}
+.about .who .text-center {
+  margin: 0 auto;
+  max-width: 900px;
+}
+.about .who h2 {
+  margin: 40px 0 50px;
+}
+.about .who .action {
+  margin: 40px 0;
+}
+.about .who .btn {
+  width: 200px;
+}
+.about .info li {
+  display: table;
+  table-layout: fixed;
+  margin: 0 0 5px;
+  width: 100%;
+}
+.about .info li:last-child {
+  margin: 0;
+}
+.about .info span,
+.about .info strong {
+  display: table-cell;
+}
+.about .info span {
+  font-size: 13px;
+}
+.about .info strong {
+  font-weight: 600;
+  width: 120px;
+}
+.about .vision blockquote {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding: 5px 20px;
+}
+.about .interest {
+  list-style: none;
+  margin: 15px 0;
+  padding: 0;
+  text-align: center;
+}
+.about .interest li {
+  cursor: pointer;
+  float: left;
+  width: 20%;
+}
+.about .interest li:hover, .about .interest li:focus {
+  color: #ffc516;
+}
+.about .interest li:hover i, .about .interest li:focus i {
+  border-color: #ffc516;
+  color: #ffc516;
+}
+.about .interest i {
+  border: 1px solid #B1B1B1;
+  border-radius: 50%;
+  color: #666666;
+  font-size: 22px;
+  height: 50px;
+  line-height: 50px;
+  width: 50px;
+}
+.about .interest span {
+  display: block;
+  margin-top: 10px;
 }
 
 @media (max-width: 1200px) {
@@ -211,6 +453,9 @@ h6 {
     font-size: 14px;
   }
 
+  .navbar-collapse {
+    background: rgba(0, 0, 0, 0.9);
+  }
   .navbar-collapse.collapse {
     display: none !important;
   }
@@ -220,12 +465,26 @@ h6 {
 
   .navbar-header {
     float: none;
+    margin-right: 0 !important;
+    padding: 0 15px;
+  }
+
+  .navbar-brand {
+    height: 60px;
+    padding: 5px 15px;
   }
 
   .navbar-toggle {
     display: block;
   }
 
+  .navbar {
+    height: 61px;
+    min-height: 0;
+  }
+  .navbar .container {
+    padding: 0;
+  }
   .navbar .navbar-nav {
     float: none;
   }
@@ -239,5 +498,14 @@ h6 {
   .navbar .navbar-nav > li a {
     margin: 0;
     text-align: left;
+  }
+}
+@media (max-width: 540px) {
+  .about .interest li {
+    min-height: 120px;
+    width: 50%;
+  }
+  .about .interest li:last-child {
+    width: 100%;
   }
 }

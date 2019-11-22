@@ -1,0 +1,48 @@
+.skill-bar {
+    position: relative;
+
+    strong {
+        display: block;
+        font-size: 13px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+}
+
+.progress {
+    border: 1px solid $yellow;
+    border-radius: 5px;
+    box-shadow: none;
+    height: 6px;
+    margin-bottom: 30px;
+    overflow: visible;
+}
+
+.progress-bar {
+    box-shadow: none;
+    position: relative;
+
+    &:after {
+        background: $yellow;
+        border-radius: 50px;
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0px;
+        height: 15px;
+        margin: -6px -3px 0 0;
+        width: 15px;
+    }
+}
+
+.progress-bar-primary {
+    background-color: $primary;
+}
+
+.progress-bar-success {
+    background-color: $success;
+}
+
+.progress-bar-warning {
+    background-color: $yellow;
+}
