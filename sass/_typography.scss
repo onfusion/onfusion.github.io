@@ -28,8 +28,12 @@ p {
     position: relative;
 }
 
-.cta {
-    display: inline-block;
+a {
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    -ms-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
 }
 
 .section-title {
