@@ -512,7 +512,7 @@ section {
   z-index: 1;
 }
 .portfolio .media {
-  height: 250px;
+  min-height: 200px;
   overflow: hidden;
 }
 .portfolio .media > img {
@@ -661,6 +661,19 @@ section {
   .navbar .navbar-nav > li a {
     margin: 0;
     text-align: left;
+  }
+}
+@media (max-width: 991px) {
+  .portfolio li {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .portfolio li {
+    float: none;
+    margin: 0 auto 25px;
+    max-width: 400px;
+    width: 100%;
   }
 }
 @media (max-width: 540px) {

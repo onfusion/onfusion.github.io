@@ -102,6 +102,30 @@
             }
         }
     }
+
+}
+
+@media (max-width: 991px) {
+
+    // Portfolio SCSS Style
+    .portfolio {
+        li {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
+    // Portfolio SCSS Style
+    .portfolio {
+        li {
+            float: none;
+            margin: 0 auto 25px;
+            max-width: 400px;
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 540px) {
