@@ -51,7 +51,7 @@ p {
 .section-title h1:after,
 .section-title h2:after,
 .section-title h3:after {
-  background: #ffc516;
+  background: #38de8a;
   content: "";
   position: absolute;
   left: 0;
@@ -111,14 +111,18 @@ section {
 }
 .welcome .text-block {
   color: #B1B1B1;
-  height: 400px;
+  height: 420px;
   position: absolute;
   top: 50%;
   left: 0;
   right: 0;
-  margin: -220px auto 0;
+  margin: -250px auto 0;
   max-width: 600px;
   text-align: center;
+}
+.welcome .logo {
+  margin-bottom: 10px;
+  max-width: 60px;
 }
 .welcome h1 {
   color: #ffffff;
@@ -129,7 +133,7 @@ section {
   text-transform: uppercase;
 }
 .welcome h1 strong {
-  color: #ffc516;
+  color: #38de8a;
   display: block;
   font-size: 36px;
   font-weight: 600;
@@ -145,7 +149,7 @@ section {
   position: relative;
 }
 .welcome .cd-headline.clip .cd-words-wrapper:after {
-  background-color: #ffc516;
+  background-color: #38de8a;
 }
 .welcome .cd-headline.clip span {
   padding: 5px 0;
@@ -204,7 +208,7 @@ section {
   font-weight: 600;
 }
 .navbar-default .navbar-toggle {
-  border-color: #ffc516;
+  border-color: #38de8a;
   border-width: 2px;
   border-radius: 5px;
   margin-top: 9px;
@@ -213,10 +217,10 @@ section {
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background: #252525;
-  border-color: #ffc516;
+  border-color: #38de8a;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #ffc516;
+  background-color: #38de8a;
   height: 4px;
   width: 25px;
 }
@@ -230,15 +234,15 @@ section {
   text-align: center;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #ffc516;
+  color: #38de8a;
 }
 .navbar-default .navbar-nav > .active a {
   background: none;
-  color: #ffc516;
+  color: #38de8a;
 }
 .navbar-default .navbar-nav > .active a:hover, .navbar-default .navbar-nav > .active a:focus {
   background: none;
-  color: #ffc516;
+  color: #38de8a;
 }
 
 .navbar-brand {
@@ -282,15 +286,21 @@ section {
   position: relative;
 }
 .skill-bar strong {
+  color: #666666;
   display: block;
   font-size: 13px;
   font-weight: 500;
   margin-bottom: 5px;
 }
+.skill-bar strong span {
+  display: inline-block;
+  font-weight: 600;
+  width: 35px;
+}
 
 .progress {
-  border: 1px solid #ffc516;
-  border-radius: 5px;
+  background-color: #e6e6e6;
+  border-radius: 0;
   box-shadow: none;
   height: 6px;
   margin-bottom: 30px;
@@ -302,27 +312,36 @@ section {
   position: relative;
 }
 .progress-bar:after {
-  background: #ffc516;
+  background: #B1B1B1;
   border-radius: 50px;
   content: "";
   position: absolute;
   right: 0;
   top: 0px;
   height: 15px;
-  margin: -6px -3px 0 0;
+  margin: -5px -3px 0 0;
   width: 15px;
 }
 
 .progress-bar-primary {
   background-color: #2196f3;
 }
+.progress-bar-primary:after {
+  background: #2196f3;
+}
 
 .progress-bar-success {
   background-color: #38de8a;
 }
+.progress-bar-success:after {
+  background: #38de8a;
+}
 
 .progress-bar-warning {
-  background-color: #ffc516;
+  background-color: #38de8a;
+}
+.progress-bar-warning:after {
+  background: #38de8a;
 }
 
 .about {
@@ -401,11 +420,11 @@ section {
   width: 20%;
 }
 .about .interest li:hover, .about .interest li:focus {
-  color: #ffc516;
+  color: #38de8a;
 }
 .about .interest li:hover i, .about .interest li:focus i {
-  border-color: #ffc516;
-  color: #ffc516;
+  border-color: #38de8a;
+  color: #38de8a;
 }
 .about .interest i {
   border: 1px solid #B1B1B1;

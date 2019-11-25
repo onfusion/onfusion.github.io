@@ -101,11 +101,11 @@
 
             &:hover,
             &:focus {
-                color: $yellow;
+                color: $success;
 
                 i {
-                    border-color: $yellow;
-                    color: $yellow;
+                    border-color: $success;
+                    color: $success;
                 }
             }
         }

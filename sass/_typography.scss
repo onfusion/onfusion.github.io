@@ -43,7 +43,8 @@ p {
         margin: 10px 0;
 
         &:after {
-            background: $yellow;
+            // background: $warning;
+            background: $success;
             content: "";
             position: absolute;
             left: 0;

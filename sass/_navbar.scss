@@ -20,7 +20,7 @@
     font-weight: 600;
 
     .navbar-toggle {
-        border-color: $yellow;
+        border-color: $success;
         border-width: 2px;
         border-radius: 5px;
         margin-top: 9px;
@@ -30,11 +30,11 @@
         &:hover,
         &:focus {
             background: #252525;
-            border-color: $yellow;
+            border-color: $success;
         }
 
         .icon-bar {
-            background-color: $yellow;
+            background-color: $success;
             height: 4px;
             width: 25px;
 
@@ -54,7 +54,7 @@
 
                 &:hover,
                 &:focus {
-                    color: $yellow;
+                    color: $success;
                 }
             }
         }
@@ -62,12 +62,12 @@
         >.active {
             a {
                 background: none;
-                color: $yellow;
+                color: $success;
 
                 &:hover,
                 &:focus {
                     background: none;
-                    color: $yellow;
+                    color: $success;
                 }
             }
         }

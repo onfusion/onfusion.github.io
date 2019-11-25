@@ -24,15 +24,21 @@
     }
 
     .text-block {
+        // background: black;
         color: $grey;
-        height: 400px;
+        height: 420px;
         position: absolute;
         top: 50%;
         left: 0;
         right: 0;
-        margin: -220px auto 0;
+        margin: -250px auto 0;
         max-width: 600px;
         text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+        max-width: 60px;
     }
 
     h1 {
@@ -44,7 +50,7 @@
         text-transform: uppercase;
 
         strong {
-            color: $yellow;
+            color: $success;
             display: block;
             font-size: 36px;
             font-weight: 600;
@@ -64,7 +70,7 @@
         &.clip {
             .cd-words-wrapper {
                 &:after {
-                    background-color: $yellow;
+                    background-color: $success;
                 }
             }
 
