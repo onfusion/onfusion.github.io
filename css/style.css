@@ -758,6 +758,103 @@ section {
   font-weight: 500;
 }
 
+.owl-carousel .owl-stage-outer:before, .owl-carousel .owl-stage-outer:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  bottom: 15px;
+  width: 250px;
+  z-index: 99;
+}
+.owl-carousel .owl-stage-outer:before {
+  left: 0;
+  background: white;
+  background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0) 75%);
+  background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0) 75%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0) 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
+}
+.owl-carousel .owl-stage-outer:after {
+  right: 0;
+  background: white;
+  background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 75%);
+  background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 75%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
+}
+.owl-carousel .item {
+  padding: 15px;
+  position: relative;
+}
+.owl-carousel .owl-dots {
+  position: relative;
+  text-align: center;
+}
+.owl-carousel .owl-dots .owl-dot {
+  background: #a5f0ca;
+  border-radius: 50px;
+  display: inline-block;
+  height: 10px;
+  margin: 5px;
+  width: 10px;
+}
+.owl-carousel .owl-dots .owl-dot:hover, .owl-carousel .owl-dots .owl-dot:focus, .owl-carousel .owl-dots .owl-dot.active {
+  background: #38de8a;
+  box-shadow: 0 0 0 3px #a5f0ca;
+}
+
+.testimonial blockquote {
+  border: 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+  min-height: 220px;
+  padding: 20px 20px 20px 145px;
+  position: relative;
+  text-align: left;
+}
+.testimonial blockquote .dp {
+  border-radius: 5px;
+  height: 100px;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  position: absolute;
+  left: 20px;
+  top: 25px;
+  width: 100px;
+}
+.testimonial blockquote .dp > img {
+  max-width: 100px;
+}
+.testimonial blockquote p {
+  margin: 5px 0 15px;
+  max-height: 110px;
+  min-height: 110px;
+  overflow: hidden;
+}
+.testimonial blockquote footer {
+  color: #666666;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.testimonial blockquote cite {
+  font-weight: 400;
+}
+.testimonial blockquote .cta {
+  border: 1px solid #2196f3;
+  border-radius: 2px;
+  color: #2196f3;
+  margin-left: 10px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+.testimonial blockquote .cta:hover, .testimonial blockquote .cta:focus {
+  background: #2196f3;
+  color: #ffffff;
+}
+
 @media (max-width: 1200px) {
   .navbar-default {
     font-size: 16px;

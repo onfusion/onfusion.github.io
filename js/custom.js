@@ -19,3 +19,31 @@ $('body').scrollspy({
 $('[data-spy="scroll"]').each(function () {
     var $spy = $(this).scrollspy('refresh')
 })
+
+
+// OWL Carousel for testimonial
+$(document).ready(function () {
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        touchDrag: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        nav: false,
+        responsiveClass: true,
+        center: true,
+        stagePadding: 150,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            900: {
+                items: 1,
+            },
+            1000: {
+                items: 1,
+            }
+        }
+    })
+});
