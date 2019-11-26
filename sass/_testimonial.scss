@@ -1,4 +1,6 @@
 .owl-carousel {
+    margin: 50px 0;
+
     .owl-stage-outer {
 
         &:before,
@@ -7,7 +9,7 @@
             position: absolute;
             top: 15px;
             bottom: 15px;
-            width: 250px;
+            width: 200px;
             z-index: 99;
 
         }
@@ -94,6 +96,7 @@
         }
 
         footer {
+            background: none;
             color: $greyDark;
             font-size: 12px;
             font-weight: 500;

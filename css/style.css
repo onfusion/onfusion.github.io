@@ -42,6 +42,14 @@ a {
   -moz-transition: 0.4s ease-in-out;
 }
 
+.cta {
+  color: #2196f3;
+}
+.cta:hover, .cta:focus {
+  color: #0c7cd5;
+  text-decoration: none;
+}
+
 .section-title {
   margin-bottom: 25px;
   overflow: hidden;
@@ -758,12 +766,15 @@ section {
   font-weight: 500;
 }
 
+.owl-carousel {
+  margin: 50px 0;
+}
 .owl-carousel .owl-stage-outer:before, .owl-carousel .owl-stage-outer:after {
   content: "";
   position: absolute;
   top: 15px;
   bottom: 15px;
-  width: 250px;
+  width: 200px;
   z-index: 99;
 }
 .owl-carousel .owl-stage-outer:before {
@@ -834,6 +845,7 @@ section {
   overflow: hidden;
 }
 .testimonial blockquote footer {
+  background: none;
   color: #666666;
   font-size: 12px;
   font-weight: 500;
@@ -853,6 +865,21 @@ section {
 .testimonial blockquote .cta:hover, .testimonial blockquote .cta:focus {
   background: #2196f3;
   color: #ffffff;
+}
+
+.contact {
+  background: #f2f2f2;
+}
+
+footer {
+  background: #333333;
+}
+footer .copyright {
+  color: #B1B1B1;
+  font-size: 12px;
+  margin: 0;
+  padding: 15px 0;
+  text-align: center;
 }
 
 @media (max-width: 1200px) {

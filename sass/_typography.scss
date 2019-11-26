@@ -36,6 +36,16 @@ a {
     -moz-transition: 0.4s ease-in-out;
 }
 
+.cta {
+    color: $primary;
+
+    &:hover,
+    &:focus {
+        color: darken($primary, 10);
+        text-decoration: none;
+    }
+}
+
 .section-title {
     margin-bottom: 25px;
     overflow: hidden;
