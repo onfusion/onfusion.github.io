@@ -74,7 +74,7 @@
             background: $success;
             height: 2px;
             position: absolute;
-            top: 50%;
+            top: 100px;
             left: -100px;
             margin-top: -1px;
             width: 100px;
@@ -112,6 +112,94 @@
                     width: 7px;
                 }
             }
+        }
+    }
+}
+
+.h-timeline {
+    @extend .clearfix;
+    list-style: none;
+    margin: 50px 0 20px;
+    padding: 30px 0 0;
+    position: relative;
+
+    >li {
+        float: left;
+        padding: 15px;
+        position: relative;
+        text-align: center;
+        width: 25%;
+
+        &:hover {
+            .detail {
+                box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+            }
+        }
+
+        &:before {
+            content: "";
+            border-width: 1px 0 0 1px;
+            border-style: solid;
+            border-color: $success;
+            height: 130px;
+            position: absolute;
+            top: -7px;
+            left: 50%;
+            width: 100%;
+        }
+
+        &:last-child {
+            &:before {
+                border-top: 0;
+                width: 0;
+            }
+        }
+    }
+
+    .year {
+        background: $success;
+        box-shadow: 0 0 0 3px lighten($success, 25);
+        border-radius: 20px;
+        color: $white;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        line-height: 30px;
+        margin: 30px auto 50px;
+        max-width: 70%;
+        padding: 0 10px;
+        position: relative;
+
+        &:before {
+            content: "";
+            background: $success;
+            border-radius: 50%;
+            box-shadow: 0 0 0 3px lighten($success, 25);
+            height: 14px;
+            position: absolute;
+            top: -60px;
+            left: 50%;
+            margin-left: -7px;
+            width: 14px;
+            z-index: 10;
+        }
+    }
+
+    .detail {
+        background: $white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+
+        h4 {
+            font-weight: 500;
+        }
+
+        strong {
+            color: $greyDark;
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
         }
     }
 }

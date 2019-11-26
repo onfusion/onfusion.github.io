@@ -84,7 +84,7 @@ section {
   margin: 5px 0 20px;
 }
 
-.clearfix:before, .timeline > li:before, .about .interest:before, .portfolio:before, .clearfix:after, .timeline > li:after, .about .interest:after, .portfolio:after {
+.clearfix:before, .timeline > li:before, .h-timeline:before, .about .interest:before, .portfolio:before, .clearfix:after, .timeline > li:after, .h-timeline:after, .about .interest:after, .portfolio:after {
   content: "";
   clear: both;
   display: table;
@@ -414,7 +414,7 @@ section {
   background: #38de8a;
   height: 2px;
   position: absolute;
-  top: 50%;
+  top: 100px;
   left: -100px;
   margin-top: -1px;
   width: 100px;
@@ -446,6 +446,80 @@ section {
   top: 7px;
   left: 0;
   width: 7px;
+}
+
+.h-timeline {
+  list-style: none;
+  margin: 50px 0 20px;
+  padding: 30px 0 0;
+  position: relative;
+}
+.h-timeline > li {
+  float: left;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+  width: 25%;
+}
+.h-timeline > li:hover .detail {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+.h-timeline > li:before {
+  content: "";
+  border-width: 1px 0 0 1px;
+  border-style: solid;
+  border-color: #38de8a;
+  height: 130px;
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  width: 100%;
+}
+.h-timeline > li:last-child:before {
+  border-top: 0;
+  width: 0;
+}
+.h-timeline .year {
+  background: #38de8a;
+  box-shadow: 0 0 0 3px #a5f0ca;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin: 30px auto 50px;
+  max-width: 70%;
+  padding: 0 10px;
+  position: relative;
+}
+.h-timeline .year:before {
+  content: "";
+  background: #38de8a;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #a5f0ca;
+  height: 14px;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  margin-left: -7px;
+  width: 14px;
+  z-index: 10;
+}
+.h-timeline .detail {
+  background: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.h-timeline .detail h4 {
+  font-weight: 500;
+}
+.h-timeline .detail strong {
+  color: #666666;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
 }
 
 .about {
