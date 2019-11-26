@@ -84,7 +84,7 @@ section {
   margin: 5px 0 20px;
 }
 
-.clearfix:before, .about .interest:before, .history .timeline > li:before, .portfolio:before, .clearfix:after, .about .interest:after, .history .timeline > li:after, .portfolio:after {
+.clearfix:before, .timeline > li:before, .about .interest:before, .portfolio:before, .clearfix:after, .timeline > li:after, .about .interest:after, .portfolio:after {
   content: "";
   clear: both;
   display: table;
@@ -352,6 +352,102 @@ section {
   background: #38de8a;
 }
 
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.timeline > li {
+  margin-bottom: 30px;
+  padding-left: 230px;
+  position: relative;
+}
+.timeline > li:hover .detail {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+.timeline > li:last-child .year:after {
+  content: none;
+}
+.timeline .year {
+  background: #38de8a;
+  color: #ffffff;
+  font-family: 'Dosis', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  height: 100px;
+  letter-spacing: 1px;
+  line-height: 34px;
+  padding: 15px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  text-align: center;
+  width: 150px;
+}
+.timeline .year:after {
+  content: "";
+  background: #38de8a;
+  height: 220px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -2px;
+  width: 4px;
+}
+.timeline .year span {
+  display: block;
+  margin: 0;
+}
+.timeline .year span + span {
+  font-size: 16px;
+}
+.timeline .detail {
+  background: #ffffff;
+  border-left: 4px solid #38de8a;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  min-height: 200px;
+  padding: 20px;
+  position: relative;
+}
+.timeline .detail:before {
+  content: "";
+  background: #38de8a;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: -100px;
+  margin-top: -1px;
+  width: 100px;
+}
+.timeline .detail h4 {
+  font-weight: 600;
+}
+.timeline .detail strong {
+  color: #2196f3;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.timeline .detail ul {
+  font-size: 13px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.timeline .detail ul li {
+  padding-left: 20px;
+  position: relative;
+}
+.timeline .detail ul li:before {
+  content: "";
+  background: #38de8a;
+  height: 7px;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 7px;
+}
+
 .about {
   background: #f2f2f2;
 }
@@ -450,101 +546,6 @@ section {
 
 .history {
   background: #f2f2f2;
-}
-.history .timeline {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.history .timeline > li {
-  margin-bottom: 30px;
-  padding-left: 230px;
-  position: relative;
-}
-.history .timeline > li:hover .detail {
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
-}
-.history .timeline > li:last-child .year:after {
-  content: none;
-}
-.history .timeline .year {
-  background: #38de8a;
-  color: #ffffff;
-  font-family: 'Dosis', sans-serif;
-  font-size: 22px;
-  font-weight: 600;
-  height: 100px;
-  letter-spacing: 1px;
-  line-height: 34px;
-  padding: 15px;
-  position: absolute;
-  top: 50px;
-  left: 0;
-  text-align: center;
-  width: 150px;
-}
-.history .timeline .year:after {
-  content: "";
-  background: #38de8a;
-  height: 220px;
-  position: absolute;
-  top: 100px;
-  left: 50%;
-  margin-left: -2px;
-  width: 4px;
-}
-.history .timeline .year span {
-  display: block;
-  margin: 0;
-}
-.history .timeline .year span + span {
-  font-size: 16px;
-}
-.history .timeline .detail {
-  background: #ffffff;
-  border-left: 4px solid #38de8a;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  min-height: 200px;
-  padding: 20px;
-  position: relative;
-}
-.history .timeline .detail:before {
-  content: "";
-  background: #38de8a;
-  height: 2px;
-  position: absolute;
-  top: 50%;
-  left: -100px;
-  margin-top: -1px;
-  width: 100px;
-}
-.history .timeline .detail h4 {
-  font-weight: 600;
-}
-.history .timeline .detail strong {
-  color: #2196f3;
-  display: block;
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-.history .timeline .detail ul {
-  font-size: 13px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.history .timeline .detail ul li {
-  padding-left: 20px;
-  position: relative;
-}
-.history .timeline .detail ul li:before {
-  content: "";
-  background: #38de8a;
-  height: 7px;
-  position: absolute;
-  top: 7px;
-  left: 0;
-  width: 7px;
 }
 
 .portfolio {
