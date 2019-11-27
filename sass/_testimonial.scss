@@ -1,41 +1,8 @@
 .owl-carousel {
     margin: 50px 0;
 
-    .owl-stage-outer {
-
-        &:before,
-        &:after {
-            content: "";
-            position: absolute;
-            top: 15px;
-            bottom: 15px;
-            width: 200px;
-            z-index: 99;
-
-        }
-
-        // &:before {
-        //     left: 0;
-        //     background: rgb(255, 255, 255);
-        //     background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0) 75%);
-        //     background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0) 75%);
-        //     background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0) 75%);
-        //     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
-        // }
-
-        // &:after {
-        //     right: 0;
-        //     background: rgb(255, 255, 255);
-        //     background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 75%);
-        //     background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 75%);
-        //     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 75%);
-        //     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
-        // }
-    }
-
-
     .item {
-        padding: 15px;
+        padding: 15px 0;
         position: relative;
     }
 
@@ -68,23 +35,20 @@
         font-size: 14px;
         line-height: 22px;
         margin: 0;
-        min-height: 220px;
-        padding: 20px 20px 20px 145px;
+        padding: 20px;
         position: relative;
-        text-align: left;
+        text-align: center;
 
         .dp {
-            border-radius: 5px;
-            height: 100px;
-            margin: 0 auto 20px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 3px lighten($grey, 20);
+            height: 80px;
+            margin: 5px auto 20px;
             overflow: hidden;
-            position: absolute;
-            left: 20px;
-            top: 25px;
-            width: 100px;
+            width: 80px;
 
             >img {
-                max-width: 100px;
+                max-width: 100%;
             }
         }
 
@@ -98,21 +62,26 @@
         footer {
             background: none;
             color: $greyDark;
-            font-size: 12px;
-            font-weight: 500;
-            line-height: 24px;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 20px;
         }
 
         cite {
+            display: block;
             font-weight: 400;
+            margin: 5px 0;
         }
 
         .cta {
             border: 1px solid $primary;
             border-radius: 2px;
             color: $primary;
-            margin-left: 10px;
-            padding: 5px 10px;
+            display: inline-block;
+            font-weight: 400;
+            line-height: 20px;
+            padding: 5px 15px;
+            text-align: center;
             text-decoration: none;
 
             &:hover,

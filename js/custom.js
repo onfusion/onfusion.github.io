@@ -25,7 +25,7 @@ $('[data-spy="scroll"]').each(function () {
 $(document).ready(function () {
     $('.owl-carousel').owlCarousel({
         loop: true,
-        margin: 0,
+        margin: 30,
         touchDrag: true,
         autoplay: true,
         autoplayTimeout: 7000,
