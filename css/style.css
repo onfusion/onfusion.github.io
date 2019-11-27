@@ -1,9 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Dosis:300,400,500,600,700|Raleway:300,400,500,600,700,900&display=swap");
 /*
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Dosis', sans-serif;
+Author:     Jawad Bhatti
+Year:       2019
+Name:       OnFusion
+URL:        https://onfusion.github.io/
+Version:    v1.0
+Copyright 2019, Onfusion.
+Free to use and abuse under the MIT license.
 */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Dosis:300,400,500,600,700|Raleway:300,400,500,600,700,900&display=swap");
 html,
 body {
   scroll-behavior: smooth;
