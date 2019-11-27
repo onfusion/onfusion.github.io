@@ -28,12 +28,12 @@ $(document).ready(function () {
         margin: 0,
         touchDrag: true,
         autoplay: true,
-        autoplayTimeout: 5000,
+        autoplayTimeout: 7000,
         autoplayHoverPause: true,
         nav: false,
         responsiveClass: true,
-        center: true,
-        stagePadding: 150,
+        // center: true,
+        // stagePadding: 150,
         responsive: {
             0: {
                 items: 1,
@@ -42,7 +42,7 @@ $(document).ready(function () {
                 items: 1,
             },
             1000: {
-                items: 1,
+                items: 2,
             }
         }
     })
