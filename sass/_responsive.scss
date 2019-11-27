@@ -17,6 +17,18 @@
             }
         }
     }
+
+    // H Timeline SCSS Style
+    .h-timeline {
+        .detail {
+            padding: 20px 15px;
+
+            strong {
+                font-size: 13px;
+                letter-spacing: 0.5px;
+            }
+        }
+    }
 }
 
 @media (max-width: 1024px) {
@@ -113,6 +125,48 @@
             width: 50%;
         }
     }
+
+    // Timeline SCSS Style
+    .timeline {
+        >li {
+            padding-left: 175px;
+        }
+
+        .year {
+            height: 90px;
+            line-height: 30px;
+            top: 55px;
+            width: 130px;
+        }
+
+        .detail {
+            &:before {
+                left: -115px;
+                width: 115px;
+            }
+        }
+    }
+
+    // H Timeline SCSS Style
+    .h-timeline {
+
+        >li {
+            margin-top: 60px;
+            width: 50%;
+
+            &:nth-child(1),
+            &:nth-child(2) {
+                margin-top: 0;
+            }
+
+            &:nth-child(2) {
+                &:before {
+                    width: 0;
+                    border-width: 0 0 0 1px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -124,6 +178,109 @@
             margin: 0 auto 25px;
             max-width: 400px;
             width: 100%;
+        }
+    }
+
+    // Timeline SCSS Style
+    .timeline {
+        >li {
+            padding-left: 50px;
+
+            &:last-child {
+                .detail {
+                    &:before {
+                        border-color: $success;
+                        border-style: solid;
+                        border-width: 0 0 0 2px;
+                        height: calc(50% + 30px);
+                    }
+                }
+            }
+        }
+
+        .year {
+            height: auto;
+            line-height: 24px;
+            margin-left: -65px;
+            margin-bottom: 30px;
+            padding: 5px 15px;
+            position: relative;
+            top: 0;
+            width: 200px;
+
+            span {
+                display: inline-block;
+
+                &+span {
+                    &:before {
+                        content: "-";
+                        position: relative;
+                        margin: 0 10px 0 5px;
+
+                    }
+                }
+            }
+        }
+
+        .detail {
+            &:before {
+                border-width: 0 0 0 2px;
+                height: calc(100% + 60px);
+                top: -30px;
+                left: -35px;
+                width: 35px;
+            }
+
+            &:after {
+                content: "";
+                border-color: $success;
+                border-style: solid;
+                border-width: 2px 0 0 0;
+                position: absolute;
+                top: 50%;
+                left: -35px;
+                width: 35px;
+            }
+        }
+    }
+
+    // H Timeline SCSS Style
+    .h-timeline {
+
+        >li {
+            float: none;
+            margin: 0;
+            max-width: 450px;
+            padding-left: 75px;
+            width: 100%;
+
+            &:before {
+                border-width: 0 0 0 1px;
+                height: 100%;
+                left: 35px;
+                top: 15px;
+                bottom: 0;
+                width: 0;
+            }
+
+            &:last-child {
+                &:before {
+                    height: 50%;
+                }
+            }
+        }
+
+        .year {
+            border-radius: 0;
+            line-height: 24px;
+            margin: 0 0 30px -75px;
+            max-width: 200px;
+            padding: 5px 15px;
+
+            &:before {
+                top: 100px;
+                left: 35px;
+            }
         }
     }
 }
