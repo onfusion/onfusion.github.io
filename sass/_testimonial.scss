@@ -11,7 +11,7 @@
         text-align: center;
 
         .owl-dot {
-            background: lighten($success, 25);
+            background: lighten($primary, 25);
             border-radius: 50px;
             display: inline-block;
             height: 10px;
@@ -21,8 +21,8 @@
             &:hover,
             &:focus,
             &.active {
-                background: $success;
-                box-shadow: 0 0 0 3px lighten($success, 25);
+                background: $primary;
+                box-shadow: 0 0 0 3px lighten($primary, 25);
             }
         }
     }

@@ -11,7 +11,7 @@
 
         &:hover {
             .year {
-                box-shadow: 0 0 0 5px lighten($success, 25);
+                box-shadow: 0 0 0 5px lighten($primary, 25);
             }
 
             .detail {
@@ -30,7 +30,7 @@
     }
 
     .year {
-        background: $success;
+        background: $primary;
         color: $white;
         font-family: 'Dosis', sans-serif;
         font-size: 22px;
@@ -65,7 +65,7 @@
 
     .detail {
         background: $white;
-        border-left: 4px solid $success;
+        border-left: 4px solid $primary;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         min-height: 200px;
         padding: 20px;
@@ -73,10 +73,10 @@
 
         &:before {
             content: "";
-            // background: $success;
+            // background: $primary;
             border-width: 2px 0 0 4px;
             border-style: solid;
-            border-color: $success;
+            border-color: $primary;
             position: absolute;
             top: 100px;
             height: calc(100% + 30px);
@@ -108,7 +108,7 @@
 
                 &:before {
                     content: "";
-                    background: $success;
+                    background: $primary;
 
                     height: 7px;
                     position: absolute;
@@ -155,7 +155,7 @@
             content: "";
             border-width: 1px 0 0 1px;
             border-style: solid;
-            border-color: $success;
+            border-color: $primary;
             height: 130px;
             position: absolute;
             top: -7px;
@@ -172,8 +172,8 @@
     }
 
     .year {
-        background: $success;
-        box-shadow: 0 0 0 3px lighten($success, 25);
+        background: $primary;
+        box-shadow: 0 0 0 3px lighten($primary, 25);
         border-radius: 20px;
         color: $white;
         font-size: 16px;
@@ -187,9 +187,9 @@
 
         &:before {
             content: "";
-            background: $success;
+            background: $primary;
             border-radius: 50%;
-            box-shadow: 0 0 0 3px lighten($success, 25);
+            box-shadow: 0 0 0 3px lighten($primary, 25);
             height: 14px;
             position: absolute;
             top: -60px;

@@ -61,9 +61,9 @@
 }
 
 .progress-bar-warning {
-    background-color: $success;
+    background-color: $warning;
 
     &:after {
-        background: $success;
+        background: $warning;
     }
 }
