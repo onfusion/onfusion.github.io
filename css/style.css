@@ -47,10 +47,10 @@ a {
 }
 
 .cta {
-  color: #00a1e0;
+  color: #3DB2FF;
 }
 .cta:hover, .cta:focus {
-  color: #007cad;
+  color: #0a9eff;
   text-decoration: none;
 }
 
@@ -67,7 +67,7 @@ a {
 .section-title h1:after,
 .section-title h2:after,
 .section-title h3:after {
-  background: #00a1e0;
+  background: #3DB2FF;
   content: "";
   position: absolute;
   left: 0;
@@ -149,7 +149,7 @@ section {
   text-transform: uppercase;
 }
 .welcome h1 strong {
-  color: #00a1e0;
+  color: #3DB2FF;
   display: block;
   font-size: 36px;
   font-weight: 600;
@@ -165,7 +165,7 @@ section {
   position: relative;
 }
 .welcome .cd-headline.clip .cd-words-wrapper:after {
-  background-color: #00a1e0;
+  background-color: #3DB2FF;
 }
 .welcome .cd-headline.clip span {
   padding: 5px 0;
@@ -214,7 +214,7 @@ section {
   font-weight: 600;
 }
 .navbar-default .navbar-toggle {
-  border-color: #00a1e0;
+  border-color: #3DB2FF;
   border-width: 2px;
   border-radius: 5px;
   margin-top: 9px;
@@ -223,10 +223,10 @@ section {
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background: #252525;
-  border-color: #00a1e0;
+  border-color: #3DB2FF;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #00a1e0;
+  background-color: #3DB2FF;
   height: 4px;
   width: 25px;
 }
@@ -240,15 +240,15 @@ section {
   text-align: center;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #00a1e0;
+  color: #3DB2FF;
 }
 .navbar-default .navbar-nav > .active a {
   background: none;
-  color: #00a1e0;
+  color: #3DB2FF;
 }
 .navbar-default .navbar-nav > .active a:hover, .navbar-default .navbar-nav > .active a:focus {
   background: none;
-  color: #00a1e0;
+  color: #3DB2FF;
 }
 
 .navbar-brand {
@@ -269,12 +269,12 @@ section {
 }
 
 .btn-primary {
-  border-color: #00a1e0;
-  background-color: #00a1e0;
+  border-color: #3DB2FF;
+  background-color: #3DB2FF;
 }
 .btn-primary:hover, .btn-primary:focus {
-  border-color: #00a1e0;
-  background-color: #00a1e0;
+  border-color: #3DB2FF;
+  background-color: #3DB2FF;
   box-shadow: 0 3px 13px rgba(0, 0, 0, 0.25), 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -345,10 +345,10 @@ section {
 }
 
 .progress-bar-primary {
-  background-color: #00a1e0;
+  background-color: #3DB2FF;
 }
 .progress-bar-primary:after {
-  background: #00a1e0;
+  background: #3DB2FF;
 }
 
 .progress-bar-success {
@@ -376,7 +376,7 @@ section {
   position: relative;
 }
 .timeline > li:hover .year {
-  box-shadow: 0 0 0 5px #61d2ff;
+  box-shadow: 0 0 0 5px #a3daff;
 }
 .timeline > li:hover .detail {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
@@ -386,7 +386,7 @@ section {
   height: 0;
 }
 .timeline .year {
-  background: #00a1e0;
+  background: #3DB2FF;
   color: #ffffff;
   font-family: 'Dosis', sans-serif;
   font-size: 22px;
@@ -416,7 +416,7 @@ section {
 }
 .timeline .detail {
   background: #ffffff;
-  border-left: 4px solid #00a1e0;
+  border-left: 4px solid #3DB2FF;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   min-height: 200px;
   padding: 20px;
@@ -426,7 +426,7 @@ section {
   content: "";
   border-width: 2px 0 0 4px;
   border-style: solid;
-  border-color: #00a1e0;
+  border-color: #3DB2FF;
   position: absolute;
   top: 100px;
   height: calc(100% + 30px);
@@ -438,7 +438,7 @@ section {
   font-weight: 600;
 }
 .timeline .detail strong {
-  color: #00a1e0;
+  color: #3DB2FF;
   display: block;
   font-weight: 500;
   margin-bottom: 5px;
@@ -455,7 +455,7 @@ section {
 }
 .timeline .detail ul li:before {
   content: "";
-  background: #00a1e0;
+  background: #3DB2FF;
   height: 7px;
   position: absolute;
   top: 7px;
@@ -490,7 +490,7 @@ section {
   content: "";
   border-width: 1px 0 0 1px;
   border-style: solid;
-  border-color: #00a1e0;
+  border-color: #3DB2FF;
   height: 130px;
   position: absolute;
   top: -7px;
@@ -502,8 +502,8 @@ section {
   width: 0;
 }
 .h-timeline .year {
-  background: #00a1e0;
-  box-shadow: 0 0 0 3px #61d2ff;
+  background: #3DB2FF;
+  box-shadow: 0 0 0 3px #a3daff;
   border-radius: 20px;
   color: #ffffff;
   font-size: 16px;
@@ -517,9 +517,9 @@ section {
 }
 .h-timeline .year:before {
   content: "";
-  background: #00a1e0;
+  background: #3DB2FF;
   border-radius: 50%;
-  box-shadow: 0 0 0 3px #61d2ff;
+  box-shadow: 0 0 0 3px #a3daff;
   height: 14px;
   position: absolute;
   top: -60px;
@@ -629,12 +629,12 @@ section {
   width: 20%;
 }
 .about .interest li:hover, .about .interest li:focus {
-  color: #00a1e0;
+  color: #3DB2FF;
 }
 .about .interest li:hover i, .about .interest li:focus i {
-  border-color: #00a1e0;
-  box-shadow: 0 0 0 3px #a3e5ff;
-  color: #00a1e0;
+  border-color: #3DB2FF;
+  box-shadow: 0 0 0 3px white;
+  color: #3DB2FF;
   transform: scale(1.3);
   -webkit-transform: scale(1.3);
   -o-transform: scale(1.3);
@@ -714,7 +714,7 @@ section {
   bottom: -50%;
 }
 .portfolio figure:before {
-  background: rgba(0, 161, 224, 0.92);
+  background: rgba(61, 178, 255, 0.92);
   content: "";
   position: absolute;
   top: 50%;
@@ -803,7 +803,7 @@ section {
 }
 .portfolio .cta:hover {
   background-color: #ffffff;
-  color: #00a1e0;
+  color: #3DB2FF;
 }
 .portfolio .pills {
   align-items: center;
@@ -843,7 +843,7 @@ section {
   text-align: center;
 }
 .owl-carousel .owl-dots .owl-dot {
-  background: #61d2ff;
+  background: #bde5ff;
   border-radius: 50px;
   display: inline-block;
   height: 10px;
@@ -851,8 +851,8 @@ section {
   width: 10px;
 }
 .owl-carousel .owl-dots .owl-dot:hover, .owl-carousel .owl-dots .owl-dot:focus, .owl-carousel .owl-dots .owl-dot.active {
-  background: #00a1e0;
-  box-shadow: 0 0 0 3px #61d2ff;
+  background: #3DB2FF;
+  box-shadow: 0 0 0 3px #bde5ff;
 }
 
 .testimonial blockquote {
@@ -895,9 +895,9 @@ section {
   margin: 5px 0;
 }
 .testimonial blockquote .cta {
-  border: 1px solid #00a1e0;
+  border: 1px solid #3DB2FF;
   border-radius: 2px;
-  color: #00a1e0;
+  color: #3DB2FF;
   display: inline-block;
   font-weight: 400;
   line-height: 20px;
@@ -906,7 +906,7 @@ section {
   text-decoration: none;
 }
 .testimonial blockquote .cta:hover, .testimonial blockquote .cta:focus {
-  background: #00a1e0;
+  background: #3DB2FF;
   color: #ffffff;
 }
 
@@ -927,12 +927,12 @@ section {
   -moz-transform: scale(1.3);
 }
 .contact .contact:hover a, .contact .contact:focus a {
-  color: #00a1e0;
+  color: #3DB2FF;
 }
 .contact .contact:hover a i, .contact .contact:focus a i {
-  border: 1px solid #00a1e0;
-  box-shadow: 0 0 0 3px #7adaff;
-  color: #00a1e0;
+  border: 1px solid #3DB2FF;
+  box-shadow: 0 0 0 3px #d6efff;
+  color: #3DB2FF;
 }
 .contact .contact i {
   border: 1px solid #666666;
@@ -1118,7 +1118,7 @@ footer .copyright {
     padding-left: 50px;
   }
   .timeline > li:last-child .detail:before {
-    border-color: #00a1e0;
+    border-color: #3DB2FF;
     border-style: solid;
     border-width: 0 0 0 2px;
     height: calc(50% + 30px);
@@ -1150,7 +1150,7 @@ footer .copyright {
   }
   .timeline .detail:after {
     content: "";
-    border-color: #00a1e0;
+    border-color: #3DB2FF;
     border-style: solid;
     border-width: 2px 0 0 0;
     position: absolute;
